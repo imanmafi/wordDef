@@ -1,5 +1,10 @@
 # Word Definition
 
+# On Heroku at this link:
+```
+https://enigmatic-spire-9873.herokuapp.com
+```
+
 ## Incorporates
 
 Ruby, Rspec, Sinatra
