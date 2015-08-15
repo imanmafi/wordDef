@@ -1,0 +1,14 @@
+<h1>Words and Definitions</h1>
+
+<p>Here is the list of words and definitions</p>
+<ul>
+  <% @words.each() do |word| %>
+  <li><%=word.one_word() %>
+
+    <% @def_list.each() do |definition| %>
+    <%=definition.first_def() %>, 
+    <%=definition.second_def() %> 
+    </li>
+
+    <% end %>
+    <% end %>

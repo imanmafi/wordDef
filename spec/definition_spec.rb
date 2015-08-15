@@ -20,13 +20,6 @@ describe(Definition) do
     end
   end
 
-  describe('#third_def') do
-    it('returns one definition of the word') do
-      test_definition = Definition.new("problem", "nuisance", "virus")
-      expect(test_definition.third_def()).to(eq("virus"))
-    end
-  end
-
   describe('#save') do
     it('add a definition to an array') do
       test_definition = Definition.new("problem", "nuisance", "virus")
