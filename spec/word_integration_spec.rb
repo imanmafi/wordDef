@@ -4,7 +4,7 @@ Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
 describe("the word path", {:type => :feature}) do
-  it("directs the user to a links page or a post page") do
+  it("directs the user to a page or a post page") do
     visit('/')
     click_link("See Word List")
     expect(page).to have_content("Words")
@@ -12,7 +12,7 @@ describe("the word path", {:type => :feature}) do
 end
 
 describe("the word form path", {:type => :feature}) do
-  it("takes the user to the dealer form") do
+  it("takes the user to the form") do
     visit('/')
     click_link("Add New Word")
     expect(page).to have_content("Add New Words")
