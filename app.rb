@@ -24,7 +24,7 @@ post('/words') do
   new_word.save()
   @words = Word.all()
 
-  all_defs = Definition.new(params.fetch("def1"), params.fetch("def2"), params.fetch("def3"))
+  all_defs = Definition.new(params.fetch("def1"), params.fetch("def2"))
   all_defs.save()
   @def_list = Definition.all()
   erb(:words)
@@ -35,7 +35,7 @@ post('word') do
   new_word.save()
   @words = Word.all()
 
-  all_defs = Definition.new(params.fetch("def1"), params.fetch("def2"), params.fetch("def3"))
+  all_defs = Definition.new(params.fetch("def1"), params.fetch("def2"))
   all_defs.save()
   @def_list = Definition.all()
   erb(:words)
